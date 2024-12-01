@@ -125,6 +125,8 @@ body {
     font-weight: bold;
     opacity: 80%;
     letter-spacing: 0.3em;
+    align-self: flex-start;
+    margin-left: 100px;
 }
 
 #section-div-h2 span {
@@ -173,11 +175,52 @@ body {
     animation: slide 20s infinite linear;
 }
 
-#sub-id{
+#sub-id {
     padding: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
 }
+
 #sub-id h2 {
     margin: 20px;
+}
+
+input {
+    width: 50%;
+    margin: 20px;
+    padding: 0.5em;
+}
+
+input[type='submit'] {
+    width: 100px;
+    cursor: pointer;
+    align-self: end;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    background: black;
+    color: white;
+    bottom: 0;
+    padding: 2em;
+}
+
+.footer-text {
+    margin-top: 20px;
+}
+
+#list-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style: none;
+    padding: 3px;
 }
 
 @keyframes slide {
@@ -189,20 +232,6 @@ body {
         transform: translateX(-100%)
     }
 }
-
-/* footer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    bottom: 0;
-    background-color: black;
-    color: white;
-    width: 100vw;
-    text-align: center;
-    margin: 0 auto -20px auto;
-} */
 
 
 @media screen and (max-width: 450px) {
@@ -252,6 +281,12 @@ body {
         width: 100%;
     }
 
+    #section-div-h2 h2 {
+        letter-spacing: 0.2em;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
     .slide {
         font-size: 13px;
         animation: none;
@@ -264,5 +299,16 @@ body {
 
     #section-div-h2 {
         letter-spacing: normal;
+    }
+
+    input {
+        width: 200px;
+        margin: 10px;
+        padding: 0.5em;
+    }
+
+    input[type='submit'] {
+        width: 200px;
+        cursor: pointer;
     }
 }
