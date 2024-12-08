@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    backdrop-filter: blur(2px);
+    padding-bottom: 100px;
+    width: 100vw;
+}
+
+#main-div {
+    background: linear-gradient(120deg, #b7b47e, rgb(62, 62, 82));
+    padding-bottom: 40px;
+}
+
+#list-container {
+    width: 100vw;
+    border: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #616044;
+    position: sticky;
+    top: 0;
+}
+
+#list-container a {
+    text-decoration: none;
+}
+
+#list-container .link {
+    color: white;
+    font-size: 18px;
+    padding: 1.4em 1.6em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#list-container .link:hover {
+    background-color: #464529;
+    color: black;
+    cursor: pointer;
+}
+
+.sign {
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+    border: none;
+    right: 30px;
+    top: 90px;
+}
+
+.search-items {
+    width: 45%;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 50px;
+    margin: 48px auto 0px 20px;
+    float: left;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+#horizontal-lineDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#horizontal-lineDiv .first-hrLine,
+#horizontal-lineDiv .second-hrLine {
+    width: 45%;
+    color: black;
+}
+
+#header-container {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(220, 206, 206);
+    padding: 0;
+    margin: 50px auto;
+    letter-spacing: 0.2em;
+}
+
+#h1-span {
+    color: rgb(69, 69, 235);
+}
+
+#content-div>h2 {
+    font-size: 2.5em;
+    color: rgb(60, 59, 59);
+}
+
+#section-div {
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(240, 236, 236);
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+#section-div-h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 10px auto 30px auto;
+}
+
+#section-div-h2 h2 {
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 80%;
+    letter-spacing: 0.3em;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+#section-div-h2 span {
+    color: rgb(81, 81, 213);
+}
+
+#section-div-h2 a {
+    font-size: 1em;
+    align-self: end;
+    margin: 10px 40px 10px auto;
+}
+
+.slides {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.slide h3 {
+    color: rgb(109, 109, 239);
+    margin-bottom: 20px;
+}
+
+.slide p {
+    margin-top: 20px;
+}
+
+.slide-item {
+    background-color: white;
+    width: 22vw;
+    height: fit-content;
+    padding: 10px;
+}
+
+.slide-item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.slide {
+    flex: 1;
+    animation: slide 20s infinite linear;
+}
+
+#sub-id {
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+#sub-id h2 {
+    margin: 20px;
+    font-size: 1.5em;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sub-id label{
+    font-weight: bold;
+}
+
+#subscribe{
+    display: flex;
+}
+
+input {
+    width: 75%;
+    margin: 20px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+input[type='submit'] {
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-left: 65%;
+}
+
+input[type='submit']:hover{
+    background-color: grey;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    background: black;
+    color: white;
+    bottom: 0;
+    padding: 2em;
+}
+
+footer .top{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    height: fit-content;
+}
+
+.footer-text {
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+#list-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style: none;
+    padding: 3px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50%)
+    }
+
+    50% {
+        transform: translateX(-100%)
+    }
+
+    75% {
+        transform: translateX(50%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #header-container {
+        font-size: 2em;
+    }
+
+    #content-div>h2 {
+        font-size: 2em;
+    }
+
+    .sign {
+        position: absolute;
+        padding: 8px 10px;
+        font-size: 0.9em;
+        border-radius: 7px;
+        border: none;
+        right: 20px;
+        top: 90px;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #list-container .link {
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #list-container .link:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #some-info {
+        display: block;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    #first-section>p,
+    #second-section>p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #section-div-h2 h2 {
+        letter-spacing: 0.2em;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .slide {
+        font-size: 13px;
+        animation: none;
+    }
+
+    .slide-item {
+        width: 45vw;
+        margin-bottom: 20px;
+    }
+
+    #section-div-h2 {
+        letter-spacing: normal;
+    }
+
+    input {
+        width: 75%;
+        margin: 10px;
+        padding: 0.5em;
+    }
+
+    input[type='submit'] {
+        width: 100px;
+        margin-left: 62%;
+    }
+}
